@@ -1,0 +1,59 @@
+{
+  "id": "初版",
+  "version": "0.1.0",
+  "summary": {
+    "title": "介绍",
+    "description": "这是对您的教程的介绍。当您的教程开始时，它将显示在第一页上。"
+  },
+  "config": {
+    "testRunner": {
+      "command": "./node_modules/.bin/mocha",
+      "args": {
+        "tap": "--reporter=mocha-tap-reporter"
+      },
+      "directory": "coderoad"
+    },
+    "setup": {
+      "commands": [
+        "cd coderoad && npm install"
+      ],
+      "commits": [
+        "53971bbee6ae97cb73b8b8e8203500196b3cbb08"
+      ]
+    },
+    "repo": {
+      "uri": "https://github.com/Kokoro528/coderoad-example",
+      "branch": "v0.1.0"
+    },
+    "dependencies": [
+      {
+        "name": "node",
+        "version": ">=10"
+      }
+    ]
+  },
+  "levels": [
+    {
+      "id": "1",
+      "title": "本章我们学习如何创建index.html",
+      "summary": "1 级可选摘要",
+      "content": "Tongyuan是xxxxxxxx公司什么什么的",
+      "steps": [
+        {
+          "id": "1.1",
+          "content": "这是测试文本。创建一个“index.html”文件来通过本课程。",
+          "setup": {
+            "commits": [
+              "188943b8968ee97d1f4d5a6ee7d5103cfc8b1fed"
+            ]
+          },
+          "solution": {
+            "commits": [
+              "8b9b88a169e37330c5474be1e40eca275010f7c0"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
